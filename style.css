@@ -211,15 +211,14 @@
      color: var(--cor-texto);
      font-size: 20px;
      cursor: pointer;
-  }
+ }
 
  .ocultar {
      display: none;
  }
 
-  /* Estilo para telas entre 481px e 768px (iPads e tablets) */
+ /* Estilo para telas entre 481px e 768px (iPads e tablets) */
  @media (min-width: 481px) and (max-width: 768px) {
-
      main {
          gap: 10px;
      }
