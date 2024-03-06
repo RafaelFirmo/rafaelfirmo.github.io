@@ -13,61 +13,42 @@
         <img class="header__logo" src="img/logo.png" alt="Logo Alura">
         <h1 class="header__titulo">Decodificador de Texto</h1>
    </header>
-
-	<!-- Agrupa o conteúdo principal da página ou aplicação. -->
+	
     <main>
-
         <section class="left">   
-        <textarea class="left__textarea" placeholder="Digite seu texto"></textarea>
-		
-        <div>   
-        <div class="left__atencao">
-        <img src="img/exclamation.png" alt="imagem de exclamação">
-        <h6>Apenas letras minúsculas e sem acento</h6>
-        </div>
-
-        <div class="left__btn"> 
-         <input type="button" class="left__btn1" value="Criptografar">
-         <input type="button" class="left__btn2" value="Descriptografar">
-        </div>
-        </div>
-
+          <textarea class="left__textarea" placeholder="Digite seu texto" maxlength="200"></textarea>	
+           <div>   
+             <div class="left__atencao">
+               <img src="img/exclamation.png" alt="imagem de exclamação">
+               <h6>Apenas letras minúsculas e sem acento</h6>
+          </div>
+          <div class="left__btn"> 
+             <input type="button" class="left__btn1" value="Criptografar">
+             <input type="button" class="left__btn2" value="Descriptografar">
+          </div>
+          </div>
         </section>
-
-        <section class="right">
-
-        <div class="right__conteudo">
+        <section class="right__conteudo">
           <p class="right__resultado"></p>  
           <img class="right__img" src="img/img1.jpg" alt="Animação de um detetive">
           <h3 class="right__paragrafo">Nenhuma mensagem encontrada</h3>
-          <p class="right__texto"> Digite um texto que você deseja criptografar ou descriptografar.</p>
-          
+          <p class="right__texto"> Digite um texto que você deseja criptografar ou descriptografar.</p> 
           <input type="button" class="btn__copiar" value="Copiar">
-
-        </div> 
-
         </section>
-
 	</main>
-
-	<!-- Agrupa informações de autoria, direitos autorais, contato, 
-		   mapa do site, links e documento relacionados. -->
+	
 	<footer>
-        <h4>dev@rafaelFirmo</h4>
+            <h4>dev@rafaelFirmo</h4>
+              <div class="icon"> 
+                <a href="https://github.com/RafaelFirmo"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/rafael-firmo/"><ion-icon  name="logo-linkedin" ></ion-icon></a>  
+                <a href="https://www.cloudskillsboost.google/public_profiles/b2c1a1ed-2d83-4ee0-b27f-8c494355e57b"><ion-icon name="cloudy"></ion-icon></a>  
+               </div>
+      </footer>
 
-        <div class="icon"> 
-        <a href="https://github.com/RafaelFirmo"><ion-icon name="logo-github"></ion-icon></a>
-        <a href="https://www.linkedin.com/in/rafael-firmo/"><ion-icon  name="logo-linkedin" ></ion-icon></a>  
-        <a href="https://www.cloudskillsboost.google/public_profiles/b2c1a1ed-2d83-4ee0-b27f-8c494355e57b"><ion-icon name="cloudy"></ion-icon></a>  
-        </div>
-    </footer>
-
-	<!-- Importação do arquivo JavaScript. -->
-    
-	<script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-    
-     
+	 <script src="script.js"></script>
+         <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+      
 </body>
 
 </html>
