@@ -36,6 +36,7 @@
      display: flex;
      flex-direction: row;
      justify-content: center;
+     flex-wrap: wrap;
      gap: 100px;
  }
 
@@ -56,9 +57,9 @@
      text-align: left;
      text-transform: uppercase;
      cursor: pointer;
+     overflow: hidden;
      resize: none;
      outline: none;
-     white-space: nowrap;
      border: none;
      color: var(--cor-texto);
      background-color: var(--cor-fundo);
@@ -123,7 +124,7 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     gap: 10px;
+     gap: 5px;
      width: 400px;
      height: 600px;
      background: #FFFFFF;
@@ -167,7 +168,9 @@
 
  .right__resultado {
      width: 360px;
-     padding: 24px;
+     height: auto;
+     margin-top: 20px;
+     margin-bottom: 20px;
      text-align: center;
      font-size: 24px;
      font-weight: 400;
@@ -176,16 +179,17 @@
      color: var(--cor-texto);
      background-color: #FFFFFF;
      text-transform: uppercase;
+     overflow: hidden;
+     white-space: normal;
+     text-overflow: ellipsis;
  }
 
-
- .right h3 {
+ .right__paragrafo {
      padding: 24px;
      color: var(--cor-texto);
      background-color: #FFFFFF;
      text-align: center;
  }
-
 
  footer {
      display: flex;
@@ -197,8 +201,6 @@
      gap: 4px;
  }
 
-
-
  .icon {
      display: flex;
      flex-direction: row;
@@ -209,6 +211,72 @@
      color: var(--cor-texto);
      font-size: 20px;
      cursor: pointer;
+  /* Estilo para telas entre 481px e 768px (iPads e tablets) */
+ @media (min-width: 481px) and (max-width: 768px) {
+
+     main {
+         gap: 10px;
+     }
+
+     .header__titulo {
+         font-size: 25px;
+     }
+
+     .right__conteudo {
+         height: auto;
+     }
+
+     .right__img {
+         display: none;
+     }
+
+     .btn__copiar {
+         height: 60px;
+         margin-bottom: 20px;
+     }
+
+     .left {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         height: 400px;
+     }
+
+     .left__textarea {
+         width: 400px;
+         margin-top: 10px;
+         font-size: 25px;
+     }
+
+     .left__textarea::placeholder {
+         font-size: 25px;
+     }
+
+     .left__btn1 {
+         width: 200px;
+         height: 60px;
+     }
+
+     .left__btn2 {
+         width: 200px;
+         height: 60px;
+     }
+
+     .right__paragrafo {
+         padding: 10px;
+     }
+
+     .right__texto {
+         padding: 10px;
+         height: auto;
+     }
+
+     footer {
+         display: none;
+         height: 10px;
+     }
+ }
  }
 
  .ocultar {
