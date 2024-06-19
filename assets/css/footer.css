@@ -1,0 +1,18 @@
+section.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6.25rem;
+    background: #FFFFFF;
+}
+
+.footer__rodape {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.17rem;
+    text-align: center;
+    color: #464646;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {}

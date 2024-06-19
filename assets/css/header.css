@@ -1,0 +1,96 @@
+section.menu {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+
+
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.img__header {
+    top: 0.25rem;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.menu__list__item {
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.menu__list__item:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    section.menu {
+        height: 5rem;
+        max-width: 48rem;
+    }
+
+    #menu__list__sobremim,
+    #menu__list__skills,
+    #menu__list__hobbies,
+    #menu__list__formacao,
+    #menu__list__xp {
+        display: none;
+    }
+
+    #menu__list__contato {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 18.78px;
+
+    }
+
+    .menu__title {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.17rem;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+
+    section.menu {
+        height: 3.5rem;
+        max-width: 26.5rem;
+    }
+
+    #menu__list__sobremim,
+    #menu__list__skills,
+    #menu__list__hobbies,
+    #menu__list__formacao,
+    #menu__list__xp {
+        display: none;
+    }
+
+    #menu__list__contato {
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1rem;
+
+    }
+
+    .menu__title {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.1rem;
+    }
+}

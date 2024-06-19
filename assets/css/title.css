@@ -1,0 +1,165 @@
+section.title {
+    height: 33rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 1.2rem;
+    height: 25rem;
+
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.6rem;
+    width: 46rem;
+    height: 23rem;
+}
+
+.title__bio {
+    font-family: Raleway;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.88rem;
+    color: #464646;
+}
+
+.title__subsection {
+    font-family: Raleway;
+    font-size: 1.38rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #464646;
+
+}
+
+.title__profile {
+    width: 35%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.3rem solid #EAF2FD;
+    box-shadow: 0rem 0.5rem 2rem 0rem rgba(31, 76, 135, 0.37);
+}
+
+.title__network {
+    display: flex;
+    gap: 2rem;
+    color: #464646;
+}
+
+.title__network__item {
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.title__network__item:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Menu */
+
+    /*title*/
+    section.title {
+        justify-content: space-around;
+        height: 15.6rem;
+    }
+
+    .title__div {
+        width: 48rem;
+        height: 20.6rem;
+    }
+
+    .title__container {
+        width: 31.28rem;
+        height: 8.1rem;
+    }
+
+
+    .title__profile {
+        width: 25%;
+        border: 0.3rem solid #EAF2FD
+    }
+
+    .title__bio {
+        font-size: 1.38rem;
+        line-height: 1.61rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .title__subsection {
+        font-size: 1rem;
+        line-height: 1.17rem;
+    }
+
+    .title__network {
+        font-family: Raleway;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    section.title {
+        height: 18.7rem;
+        max-width: 26.5rem;
+    }
+
+    .title__div {
+        flex-direction: column-reverse;
+        align-items: baseline;
+        height: 17.1rem;
+        gap: 5px;
+    }
+
+    .title__container {
+        width: 100%;
+        gap: 0.6rem;
+
+    }
+
+    .title__profile {
+        width: 20%;
+        border: 1px solid #EAF2FD;
+    }
+
+    .title__bio {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+    }
+
+
+    .title__subsection {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+
+    .title__network {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.44px;
+    }
+
+}
